@@ -48,3 +48,13 @@ p {
     letter-spacing: 1px;
     line-height: 28px;
 }
+
+a.button {
+    font-family: $font-one;
+    color: $blue-two;
+    @include font-size(22.4);
+    text-decoration: none;
+    background: $yellow;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}

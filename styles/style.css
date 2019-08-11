@@ -217,6 +217,17 @@ p {
   line-height: 28px;
 }
 
+a.button {
+  font-family: "IM Fell English", serif;
+  color: #0d457f;
+  font-size: 22.4px;
+  font-size: 1.12rem;
+  text-decoration: none;
+  background: #fdd908;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
 header {
   background: url(/images/home-header.jpg);
   background-image: cover;
@@ -290,6 +301,7 @@ header img {
       grid-template-columns: 1fr 9fr 1fr 9fr;
   -ms-grid-rows: 250px;
       grid-template-rows: 250px;
+  overflow: hidden;
 }
 
 .grid i.fas {
@@ -316,4 +328,100 @@ header img {
 
 .grid div h2 {
   color: #0d457f;
+}
+
+.section-two {
+  background-color: #0d457f;
+}
+
+.section-two .section-two-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-two .section-two-flex .left-image {
+  width: 50%;
+  position: relative;
+}
+
+.section-two .section-two-flex .left-image img {
+  width: 100%;
+  -webkit-box-shadow: 10px 15px #fdd908;
+          box-shadow: 10px 15px #fdd908;
+  position: absolute;
+  right: 25%;
+  top: -50px;
+}
+
+.section-two .section-two-flex .section-two-container {
+  width: 50%;
+  padding-bottom: 20px;
+}
+
+.section-two .section-two-flex .section-two-container h2, .section-two .section-two-flex .section-two-container p {
+  color: #fff;
+}
+
+.section-two .section-two-flex .section-two-container h2 {
+  margin-top: 40px;
+}
+
+.section-two .section-two-flex .section-two-container a {
+  display: inline-block;
+  margin: 30px 0 20px 0;
+}
+
+.section-two .section-two-flex .section-two-container.one {
+  padding-left: 12.5%;
+}
+
+.section-two .section-two-flex .section-two-container.two {
+  padding-right: 12.5%;
+  position: relative;
+  text-align: right;
+}
+
+.section-two .section-two-flex .section-two-container.two p {
+  text-align: left;
+}
+
+.section-two .section-two-flex .right-image {
+  width: 50%;
+  position: relative;
+}
+
+.section-two .section-two-flex .right-image img {
+  width: 100%;
+  -webkit-box-shadow: -10px 15px #fdd908;
+          box-shadow: -10px 15px #fdd908;
+  position: absolute;
+  right: -25%;
+  top: 50px;
+}
+
+.section-three {
+  background: #eafefc;
+  text-align: center;
+}
+
+.section-three h2 {
+  padding-top: 15%;
+  color: #0d457f;
+}
+
+.section-three P {
+  text-align: left;
+  margin: 0 5%;
+}
+
+.section-three a.find-out-more {
+  margin: 50px 0;
+  display: inline-block;
+}
+
+.section-four img {
+  width: 100%;
 }
