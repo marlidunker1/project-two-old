@@ -178,3 +178,142 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 125%;
+}
+
+.wrapper {
+  max-width: 1280px;
+  /*IS THIS TOO BIG? ITS DPI LAPTOP*/
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 79px;
+  font-size: 3.95rem;
+  font-family: "IM Fell English", serif;
+  text-transform: uppercase;
+  color: #fdd908;
+}
+
+h2 {
+  font-size: 45px;
+  font-size: 2.25rem;
+  font-family: "IM Fell English", serif;
+  text-transform: uppercase;
+  line-height: 99.8px;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 20px;
+  font-size: 1rem;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+
+header {
+  background: url(/images/home-header.jpg);
+  background-image: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 90vh;
+}
+
+header nav {
+  padding-top: 50px;
+  width: 40%;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+header nav ul li a:hover {
+  border-bottom: 3px solid #fdd908;
+  padding-bottom: 4px;
+}
+
+header h1 {
+  width: 50%;
+  margin-top: 300px;
+  position: relative;
+  z-index: 10;
+}
+
+header img {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: -120px;
+}
+
+.section-one {
+  background: #eafefc;
+}
+
+.grid {
+  padding-top: 150px;
+  padding-bottom: 125px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 9fr 1fr 9fr;
+      grid-template-columns: 1fr 9fr 1fr 9fr;
+  -ms-grid-rows: 250px;
+      grid-template-rows: 250px;
+}
+
+.grid i.fas {
+  background: #fdd908;
+  border-radius: 50%;
+  margin-top: 25px;
+}
+
+.grid i.fa-map-marker-alt,
+.grid i.fa-file {
+  padding: 14px;
+  line-height: 0.8;
+}
+
+.grid i.fa-users {
+  padding: 10px;
+  line-height: 1.2;
+}
+
+.grid i.fa-phone {
+  padding: 12px;
+  line-height: 1;
+}
+
+.grid div h2 {
+  color: #0d457f;
+}
