@@ -1,0 +1,24 @@
+// HEADER
+
+header {
+    background: url(/images/contact-header.jpg);
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+
+    h1.h1.contact {
+        color: $white;
+        margin-top: 100px;
+    }
+}
+
+// MAIN
+
+main {
+    background: $blue-one;
+
+    .contact-info {
+        width: 30%;
+    }
+}

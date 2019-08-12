@@ -232,6 +232,7 @@ header {
   background: url(/images/home-header.jpg);
   background-image: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   height: 90vh;
 }
@@ -496,4 +497,25 @@ footer {
 
 footer p {
   color: #0d457f;
+}
+
+header {
+  background: url(/images/contact-header.jpg);
+  background-image: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+
+header h1.h1.contact {
+  color: #fff;
+  margin-top: 100px;
+}
+
+main {
+  background: #eafefc;
+}
+
+main .contact-info {
+  width: 30%;
 }
