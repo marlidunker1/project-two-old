@@ -62,14 +62,13 @@ header {
     background: $blue-one;
 }
 
-.grid {
+.grid-one {
 
     padding-top: 150px;
     padding-bottom: 125px;
     display: grid;
     grid-template-columns: 1fr 9fr 1fr 9fr;
     grid-template-rows: 250px;
-    overflow: hidden;
 
     i.fas {
         background: $yellow;
@@ -199,9 +198,82 @@ header {
 // SECTION 4 
 
 .section-four {
+    background: $blue-one;
+    margin: 0;
+    padding: 0;
     
     img {
         width: 100%;
     }
 
+}
+
+//SECTION 5
+
+.section-five {
+    background: $blue-one;
+
+    .grid-two {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        grid-gap: 10%;
+        padding-top: 50px;
+
+        .small-box {
+            margin-top: 34px;
+
+            img {
+                width: 100%;
+                box-shadow: -15px 15px $yellow;
+            }
+
+        }
+
+        .win-trip {
+
+            h2 {
+                color: $blue-two
+            }
+
+            a.find-out-more {
+                margin: 25px 0;
+                display: inline-block;
+            }
+
+        }
+
+    }
+
+}
+
+// SECTION 6
+
+.section-six {
+    background: $blue-two;
+
+    .section-six-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 60px 0;
+
+        .six-image {
+            width: 31%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// FOOTER
+
+footer {
+    background: $yellow;
+    text-align: center;
+
+    p {
+        color: $blue-two;
+    }
 }

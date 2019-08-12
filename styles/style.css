@@ -292,7 +292,7 @@ header img {
   background: #eafefc;
 }
 
-.grid {
+.grid-one {
   padding-top: 150px;
   padding-bottom: 125px;
   display: -ms-grid;
@@ -301,32 +301,31 @@ header img {
       grid-template-columns: 1fr 9fr 1fr 9fr;
   -ms-grid-rows: 250px;
       grid-template-rows: 250px;
-  overflow: hidden;
 }
 
-.grid i.fas {
+.grid-one i.fas {
   background: #fdd908;
   border-radius: 50%;
   margin-top: 25px;
 }
 
-.grid i.fa-map-marker-alt,
-.grid i.fa-file {
+.grid-one i.fa-map-marker-alt,
+.grid-one i.fa-file {
   padding: 14px;
   line-height: 0.8;
 }
 
-.grid i.fa-users {
+.grid-one i.fa-users {
   padding: 10px;
   line-height: 1.2;
 }
 
-.grid i.fa-phone {
+.grid-one i.fa-phone {
   padding: 12px;
   line-height: 1;
 }
 
-.grid div h2 {
+.grid-one div h2 {
   color: #0d457f;
 }
 
@@ -422,6 +421,79 @@ header img {
   display: inline-block;
 }
 
+.section-four {
+  background: #eafefc;
+  margin: 0;
+  padding: 0;
+}
+
 .section-four img {
   width: 100%;
+}
+
+.section-five {
+  background: #eafefc;
+}
+
+.section-five .grid-two {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2.5fr;
+      grid-template-columns: 1fr 2.5fr;
+  grid-gap: 10%;
+  padding-top: 50px;
+}
+
+.section-five .grid-two .small-box {
+  margin-top: 34px;
+}
+
+.section-five .grid-two .small-box img {
+  width: 100%;
+  -webkit-box-shadow: -15px 15px #fdd908;
+          box-shadow: -15px 15px #fdd908;
+}
+
+.section-five .grid-two .win-trip h2 {
+  color: #0d457f;
+}
+
+.section-five .grid-two .win-trip a.find-out-more {
+  margin: 25px 0;
+  display: inline-block;
+}
+
+.section-six {
+  background: #0d457f;
+}
+
+.section-six .section-six-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 0;
+}
+
+.section-six .section-six-flex .six-image {
+  width: 31%;
+}
+
+.section-six .section-six-flex .six-image img {
+  width: 100%;
+}
+
+footer {
+  background: #fdd908;
+  text-align: center;
+}
+
+footer p {
+  color: #0d457f;
 }
