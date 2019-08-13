@@ -1,0 +1,125 @@
+
+// HEADER
+
+header {
+    background: url(/images/blog-header.jpg);
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+
+    .h1.blog {
+        color: $white;
+        margin-top: 150px;
+        width: 100%;
+        text-shadow: 3px 3px 5px black;
+    }
+}
+
+// MAIN
+
+main {
+    background: $blue-one;
+
+    .boats {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .left-boat {
+            width: 30%;
+
+            img {
+                width: 100%;
+                }
+        }
+
+        .right-boat {
+            width: 60%;
+
+                img {
+                    width: 100%;
+                }
+        }
+
+    }
+
+    .flex-column {
+        display: flex;
+        justify-content: space-between;
+
+        aside {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            background: $blue-two;
+
+            p {
+                color: $white;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                        
+                li {
+                    @include font-size(20);
+                    margin: 0;
+                    font-family: $font-two;
+                    letter-spacing: 1px;
+                    line-height: 28px;
+                    color: white;
+                }
+
+                li:before{ 
+                    content:"•"; 
+                    font-size:20px; 
+                }
+                    
+            }
+        }
+
+        .right-column {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            .posted-comments {
+
+
+                .comment-box {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+
+        // COMMENT BOX GOES IN HERE
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// FOOTER
+
+footer {
+    background: $yellow;
+    text-align: center;
+
+    p {
+        color: $blue-two;
+    }
+}

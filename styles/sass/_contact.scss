@@ -7,9 +7,11 @@ header {
     background-size: cover;
     height: 90vh;
 
-    h1.h1.contact {
+    .h1.contact {
         color: $white;
-        margin-top: 100px;
+        margin-top: 150px;
+        width: 100%;
+        text-shadow: 3px 3px 5px black;
     }
 }
 
@@ -18,7 +20,117 @@ header {
 main {
     background: $blue-one;
 
-    .contact-info {
-        width: 30%;
+// CONTACT INFO
+    .contact-flex {
+        display: flex;
+        justify-content: space-between;
+    
+
+        .contact-info {
+            width: 25%;
+            padding-top: 100px;
+            padding-bottom: 200px;
+
+            .icon-box {
+                width: 160px;;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    color: $blue-two;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .address-space {
+                padding-top: 25px;
+            }
+        }
+
+// EMAIL
+        form { 
+            width: 65%;
+            justify-content: right;
+            position: relative;
+            display: flex;
+
+                input {
+                    background: $blue-two;
+                    border: none;
+                    border-bottom: 2px solid $yellow;
+                    padding: 10px;
+                }
+
+                input::placeholder {
+                    color: $white;
+                    margin: 0;
+                    font-family: $font-two;
+                    letter-spacing: 1px;
+                    line-height: 28px;
+                }               
+
+        }
+
+}
+
+fieldset {
+    width: 100%;
+    background: $blue-two;
+    position: absolute;
+    right: 10%;
+    bottom: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: none;
+    box-shadow: 15px 15px $yellow;
+
+        .name {
+            margin-left: 5%;
+        }
+
+        .email {
+            margin-right: 5%;
+        }
+
+        .email,
+        .name {
+            margin-top: 60px;
+            width: 40%;
+        }
+
+        .text-area {
+            background: $blue-two;
+            border: 2px solid $yellow;
+            margin: 40px 5% 0 5%;
+            width: 90%;
+            color: $white;
+            padding: 10px;
+        }
+
+        .submit {
+            margin: 40px 5% 40px 5%;
+            font-family: $font-one;
+            color: $blue-two;
+            @include font-size(22.4);
+            text-decoration: none;
+            background: $yellow;
+            padding: 5px 10px;
+            text-transform: uppercase;
+            border: none;
+            width: 100%;
+
+        }
+    }    
+}
+
+// FOOTER
+
+footer {
+    background: $yellow;
+    text-align: center;
+
+    p {
+        color: $blue-two;
     }
 }
