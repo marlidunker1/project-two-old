@@ -1,0 +1,136 @@
+// HEADER
+
+header {
+    background: url(/images/contact-header.jpg);
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+
+    .h1.contact {
+        color: $white;
+        margin-top: 150px;
+        width: 100%;
+        text-shadow: 3px 3px 5px black;
+    }
+}
+
+// MAIN
+
+main {
+    background: $blue-one;
+
+// CONTACT INFO
+    .contact-flex {
+        display: flex;
+        justify-content: space-between;
+    
+
+        .contact-info {
+            width: 25%;
+            padding-top: 100px;
+            padding-bottom: 200px;
+
+            .icon-box {
+                width: 160px;;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    color: $blue-two;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .address-space {
+                padding-top: 25px;
+            }
+        }
+
+// EMAIL
+        .contact-form { 
+            width: 65%;
+            justify-content: right;
+            position: relative;
+            display: flex;
+
+                input {
+                    background: $blue-two;
+                    border: none;
+                    border-bottom: 2px solid $yellow;
+                    padding: 10px;
+                }
+
+                input::placeholder {
+                    color: $white;
+                    margin: 0;
+                    font-family: $font-two;
+                    letter-spacing: 1px;
+                    line-height: 28px;
+                }               
+
+        }
+
+}
+
+.contact-fieldset {
+    width: 100%;
+    background: $blue-two;
+    position: absolute;
+    right: 10%;
+    bottom: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: none;
+    box-shadow: 15px 15px $yellow;
+
+        .contact-name {
+            margin-left: 5%;
+        }
+
+        .contact-email {
+            margin-right: 5%;
+        }
+
+        .contact-email,
+        .contact-name {
+            margin-top: 60px;
+            width: 40%;
+        }
+
+        .contact-text-area {
+            background: $blue-two;
+            border: 2px solid $yellow;
+            margin: 40px 5% 0 5%;
+            width: 90%;
+            color: $white;
+            padding: 10px;
+        }
+
+        .contact-submit {
+            margin: 40px 5% 40px 5%;
+            font-family: $font-one;
+            color: $blue-two;
+            @include font-size(22.4);
+            text-decoration: none;
+            background: $yellow;
+            padding: 5px 10px;
+            text-transform: uppercase;
+            border: none;
+            width: 100%;
+
+        }
+    }    
+}
+
+// FOOTER
+
+footer {
+    background: $yellow;
+    text-align: center;
+
+    p {
+        color: $blue-two;
+    }
+}

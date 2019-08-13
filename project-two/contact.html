@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400i|Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/78737df333.js"></script>
+</head>
+<body>
+
+  <!-- BEGIN HEADER -->
+
+  <header>
+        <div class="wrapper">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div>
+            <h1 class="h1 contact">Get In Touch</h1>
+          </div>
+        </div> <!--END WRAPPER-->
+      </header>
+
+<!-- BEGIN MAIN  -->
+
+    <main>
+
+        <section>
+
+        <!-- CONTACT INFORMATION & FORM -->
+            <div class="wrapper-two contact-flex">
+                <div class="contact-info"> <!-- CONTACT INFO -->
+                    <div class="icon-box">
+                        <a href="https://www.facebook.com/" aria-label="Go to Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/" aria-label="Go to Instagram page"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.twitter.com/" aria-label="Go to Twitter page"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.whatsapp.com/" aria-label="Go to Whatsapp page"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    </div>
+                    <p>info@email.com</p>
+                    <p>123 - 456 - 7890</p>
+                    <p class="address-space">123 Queen Street West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </div>
+                <form class="contact-form" action="submit"> <!-- EMAIL SUBMIT -->
+                    <fieldset class="contact-fieldset">
+                        <label for="name" class="visually-hidden"></label>
+                        <input type="text" id="name" placeholder="Name" class="contact-name">
+                        
+                        <label for="email" class="visually-hidden"></label>
+                        <input type="email" id="email" placeholder="Email address" class="contact-email">
+
+                        <label for="message" class="visually-hidden"></label>
+                        <textarea placeholder="Message" id="message" cols="30" rows="10" class="contact-text-area"></textarea>
+                        
+                        <label for="submit" class="visually-hidden"></label>
+                        <button type="submit" id="submit" class="contact-submit">Submit</button>  
+                    </fieldset>
+                </form>
+            </div><!--END WRAPPER-->
+        </section>
+    </main>
+
+<!-- BEGIN FOOTER -->
+
+<footer>
+    <p>Copyright &copy; 2019 HackerYou</p>
+</footer>
+    
+</body>
+</html>

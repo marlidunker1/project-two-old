@@ -1,0 +1,185 @@
+
+// HEADER
+
+header {
+    background: url(/images/blog-header.jpg);
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+
+    .h1.blog {
+        color: $white;
+        margin-top: 150px;
+        width: 100%;
+        text-shadow: 3px 3px 5px black;
+    }
+}
+
+// MAIN
+
+main {
+    background: $blue-one;
+
+    .boats {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .left-boat {
+            width: 30%;
+
+            img {
+                width: 100%;
+                }
+        }
+
+        .right-boat {
+            width: 60%;
+
+                img {
+                    width: 100%;
+                }
+        }
+
+    }
+
+    .flex-column {
+        display: flex;
+        justify-content: space-between;
+
+        aside {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            background: $blue-two;
+
+            p {
+                color: $white;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                        
+                li {
+                    @include font-size(20);
+                    margin: 0;
+                    font-family: $font-two;
+                    letter-spacing: 1px;
+                    line-height: 28px;
+                    color: white;
+                }
+
+                li:before{ 
+                    content:"•"; 
+                    font-size:20px; 
+                }
+                    
+            }
+        }
+
+        .right-column {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            .posted-comments {
+
+
+                .comment-box {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
+
+// COMMENT
+
+
+.blog-form { 
+    width: 100%;
+    position: relative;
+    display: flex;
+
+        input {
+            background: $blue-one;
+            border: none;
+            border-bottom: 2px solid $yellow;
+            padding: 10px;
+        }
+
+        input::placeholder {
+            color: black;
+            margin: 0;
+            font-family: $font-two;
+            letter-spacing: 1px;
+            line-height: 28px;
+        }               
+
+}
+
+.blog-fieldset {
+width: 100%;
+background: $blue-one;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+border: none;
+
+.blog-email,
+.blog-name {
+    margin-top: 60px;
+    width: 40%;
+}
+
+.blog-text-area {
+    background: $blue-one;
+    border: 2px solid $yellow;
+    margin-top: 40px;
+    width: 100%;
+    color: black;
+    padding: 10px;
+}
+
+.blog-submit {
+    margin: 40px 0 100px 0;
+    font-family: $font-one;
+    color: $yellow;
+    @include font-size(22.4);
+    text-decoration: none;
+    background: $blue-two;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+
+}
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// FOOTER
+
+footer {
+    background: $yellow;
+    text-align: center;
+
+    p {
+        color: $blue-two;
+    }
+}

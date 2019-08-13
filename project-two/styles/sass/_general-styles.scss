@@ -1,0 +1,77 @@
+// COLOURS
+
+$blue-one : #eafefc; 
+$blue-two : #0d457f;
+$yellow : #fdd908;
+$white : #fff;
+
+// FONTS
+
+html {
+    font-size: 125%;
+}
+
+$font-one :'IM Fell English', serif;
+$font-two :'Roboto', sans-serif;
+
+@mixin font-size($size-value) {
+    font-size: $size-value * 1px;
+    font-size: ($size-value/20) * 1rem;
+  }
+
+.wrapper {
+    max-width: 1280px; /*IS THIS TOO BIG? ITS DPI LAPTOP*/
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper-two {
+    max-width: 1280px; /*IS THIS TOO BIG? ITS DPI LAPTOP*/
+    width: 90%;
+    margin: 0 0% 0 10%;
+}
+
+h1 {
+    @include font-size(79);
+    font-family: $font-one;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px black;
+}
+
+h2 {
+    @include font-size(45);
+    font-family: $font-one;
+    text-transform: uppercase;
+    line-height: 99.8px;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    @include font-size(25);
+    font-family: $font-one;
+    text-transform: uppercase;
+    line-height: 58px;
+    margin: 0;
+    padding: 0;
+    color: $yellow;
+    letter-spacing: 0.8px;
+}
+
+p {
+    @include font-size(20);
+    margin: 0;
+    font-family: $font-two;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+a.button {
+    font-family: $font-one;
+    color: $blue-two;
+    @include font-size(22.4);
+    text-decoration: none;
+    background: $yellow;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
